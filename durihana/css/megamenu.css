@@ -1,0 +1,206 @@
+/* 
+- Name: megamenu.js - style.css
+- Version: 1.0
+- Latest update: 29.01.2016.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+custom megamenu.js - style.css
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu * {box-sizing: border-box;}
+.menu a {color:white;}
+.menu-mobile {
+display: none;
+padding: 20px;
+}
+.menu-mobile:after {
+content: "menu";
+font-style:normal;
+font-size: 2.5rem;
+padding: 0;
+float: right;
+position: relative;
+top: 50%;
+transform: translateY(-25%);
+}
+.menu-dropdown-icon:before {
+content: "+";
+font-style:normal;
+display: none;
+cursor: pointer;
+float: right;
+padding: 1.5em 2em;
+background: #fff;
+color: #333;
+}
+.menu > ul {
+margin: 0 auto;
+width: 100%;
+list-style: none;
+padding: 0;
+/* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+box-sizing: border-box;
+/*추가 */ display:flex; justify-content: space-around;
+}
+.menu > ul:before,
+.menu > ul:after {
+content: "";
+display: table;
+}
+.menu > ul:after {
+clear: both;
+}
+.menu > ul > li {
+flex:1;
+padding: 0;
+margin: 0;
+}
+.menu > ul > li a {
+text-decoration: none;
+display: block;
+padding: 20px 0; 
+text-align:center;
+}
+.menu > ul > li:hover > a{
+	color:#09C2C7;
+}
+.menu > ul > li > ul {
+display: none;
+width: 100%;
+background: #F9F8F8;
+padding: 20px;
+position: absolute;
+z-index: 99;
+left: 0;
+margin: 0;
+list-style: none;
+box-sizing: border-box;
+}
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+content: "";
+display: table;
+}
+.menu > ul > li > ul:after {
+clear: both;
+}
+.menu > ul > li > ul > li {
+margin: 0;
+padding-bottom: 0;
+list-style: none;
+min-width:224px;
+background: none;
+float: left;
+}
+.menu > ul > li > ul > li a {
+color: #777;
+padding: 0.2em 0;
+width: 95%;
+display: block;
+border-bottom: 1px solid #ccc;
+}
+.menu > ul > li > ul > li > ul {
+display: block;
+padding: 0;
+margin: 10px 0 0;
+list-style: none;
+box-sizing: border-box;
+}
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+content: "";
+display: table;
+}
+.menu > ul > li > ul > li > ul:after {
+clear: both;
+}
+.menu > ul > li > ul > li > ul > li {
+float: left;
+width: 100%;
+padding: 10px 0;
+margin: 0;
+font-size: 0.8em;
+}
+.menu > ul > li > ul > li > ul > li a {
+border: 0;
+}
+.menu > ul > li > ul.normal-sub {
+width: 300px;
+left: auto;
+padding: 10px 20px;
+}
+.menu > ul > li > ul.normal-sub > li {
+width: 100%;
+}
+.menu > ul > li > ul.normal-sub > li a {
+border: 0;
+padding: 1em 0;
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 959px) {
+.menu-container {
+	width: 100%;
+}
+.menu-mobile {
+	display: block;
+}
+.menu-dropdown-icon:before {
+	display: block;
+}
+.menu > ul {
+	display: none;
+}
+.menu > ul > li {
+	width: 100%;
+	float: none;
+	display: block;
+}
+.menu > ul > li a {
+	padding: 1.5em;
+	width: 100%;
+	display: block;
+}
+.menu > ul > li > ul {
+	position: relative;
+}
+.menu > ul > li > ul.normal-sub {
+	width: 100%;
+}
+.menu > ul > li > ul > li {
+	float: none;
+	width: 100%;
+	margin-top: 20px;
+}
+.menu > ul > li > ul > li:first-child {
+	margin: 0;
+}
+.menu > ul > li > ul > li > ul {
+	position: relative;
+}
+.menu > ul > li > ul > li > ul > li {
+	float: none;
+}
+.menu .show-on-mobile {
+	display: block;
+}
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+if megamenu has background
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu > ul > li {background-color:transparent;}
+.menu > ul > li > ul {min-height: 480px; padding:30px 0; padding-left:calc(720px + 50px); background-color:#fff; background-repeat: no-repeat; background-image: url(https://via.placeholder.com/720x480.png); background-position:top left; color:#264F75; font-size:21px; font-weight:500; font-style:normal;}
+.menu > ul > li > ul > li {margin-right:40px;}
+.menu > ul > li > ul > li > a {min-width:224px; padding:10px 48px; box-sizing: border-box; border: 5px solid #09C2C7; color:inherit;}
+
+@media only screen and (max-width: 959px){
+	.menu > ul > li {background-color:#292929;}
+	.menu > ul > li > ul {min-height: auto; padding:0; background-image:none;}
+	.menu > ul > li > ul > li {margin:0;}
+	.menu > ul > li > ul > li > a {border:transparent; color:#555;}
+}

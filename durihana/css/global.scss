@@ -1,0 +1,22 @@
+/*
+====================================================================
+	line effect css 
+====================================================================
+*/
+.drawline{
+    height:0px;
+    width:1px;
+    border-bottom:1px solid #000;
+    
+    -webkit-animation: drawline 3s;
+    -moz-animation:    drawline 3s; 
+    -o-animation:      drawline 3s; 
+    animation:         drawline 3s; 
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes drawline {
+      100% {
+          width: 300px;
+      }
+  }

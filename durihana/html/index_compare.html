@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>두리하나 홈페이지</title>
+<!-- Stylesheets -->
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/responsive.css" rel="stylesheet">
+<!-- 새로 추가-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+<link rel="icon" href="../images/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<symbol id="Durihana" viewBox="0 0 800 400">
+	<title>Durihana</title>
+	<path fill-rule="evenodd" clip-rule="evenodd" 
+	d="M272 95.93c26.5 0 47.99-21.47 47.99-47.97S298.5 0 272 0C245.5 0 224 21.47 224 47.97S245.5 95.93 272 95.93zM209.7 357.3c-25.75-17.25-52.25-33.24-79.5-48.11L58.62 270.2L1.246 471.1c-4.875 16.1 4.1 34.74 22 39.62s34.63-4.998 39.5-21.99l36.63-128.1l60.63 40.37v78.86c0 17.62 14.38 31.99 32 31.99s32-14.37 32-31.99l.0022-95.93C224 373.2 218.6 363.2 209.7 357.3zM311.1 416c-13.88 0-25.95 8.863-30.33 21.86l-24.75 74.07h319.9l-101.9-206.3c-11.38-22.49-43.1-23.63-56.1-2.01l-31.89 54.21l-65.26-35.64l-24-121.2C288.1 161.3 263.2 127.7 227.1 109.7c-1-.4999-2.125-.625-3.125-1.125c-2.25-1.125-4.752-1.1-7.252-2.625C201.5 99.85 185.2 95.98 168.7 95.98H95.1c-9.25 0-18.05 4.061-24.18 10.93l-55.95 63.92c-.75 .9998-1.5 2.124-2.25 3.249c-8.875 13.1-3 32.87 11.63 40.74l336.6 184.3l-9.837 16.87H311.1zM105.9 204.1l-23.5-12.87l28.13-32.12h34.38L105.9 204.1zM199.5 256.1l34.9-41.28l13.5 67.61L199.5 256.1z"></path>
+</symbol>
+</svg>
+	  
+<div class="page-wrapper">
+    <!-- Preloader
+    <div class="preloader"></div> -->
+	<!-- //Preloader -->
+ 	<!-- Header-->
+    <header class="header-main">
+		<div class="auto-container">
+			<a href="/index.html" class="logo">
+				<!--추후 svg로 변경 <svg class="" width="40" height="32" role="img" aria-label="Durihana"><use xlink:href="#Durihana"/></svg>-->
+				<img src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=5c9ebfb9-ed99-4bb4-b8d2-6811bff06227&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822">
+			</a>	
+			<nav class="main-menu">
+				<ul class="navigation-theme">
+					<li><a href="#" class="">About us</a></li>
+					<li><a href="#" class="">Our Work</a></li>
+					<li><a href="#" class="">Take Action</a></li>
+					<li><a href="#" class="">Donation</a></li>
+					<li><a href="#" class="">News</a></li>
+				</ul>
+				<!---이런식	<li class="dropdown has-mega-menu"><a href="#">Pages</a>
+                                    <div class="mega-menu">-->
+			</nav>
+		</div>
+    </header>
+    <!-- //Header 
+	참고: https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=5f777a2d-f8ed-4f51-9248-32a284267cda&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822
+	 rgba(38,39,117,0.75)
+	-->
+	<!--Main Slider-->
+    <section class="main-slider">
+        <div class="main-slider-carousel owl-carousel owl-theme">
+            <div class="slide" style="background-image:url(https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=f31f391d-16ae-4f44-b37a-7fef38a13912&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822)">
+            </div>
+            <div class="slide" style="background-image:url(https://via.placeholder.com/1920x718.png?text=slide+image2)">
+            </div>
+            <div class="slide" style="background-image:url(https://via.placeholder.com/1920x718.png?text=slide+image3)">
+            </div>
+        </div>
+    </section>
+    <!--End Main Slider-->
+
+	<!-- News Section -->
+	<section class="news-section">
+		<div class="outer-container">
+			<div class="sec-title centered secondary-color">
+				<h2>News&Updates</h2>
+				<!--<div class="text">Our Latest News</div>-->
+			</div>
+			<div class="news-carousel owl-carousel owl-theme">
+				<div class="card">
+					<img class="card-img" src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=4ca99f7e-2323-49b0-8d80-abae955a2e44&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822" alt="">
+					<div class="card-body">
+					  <h2 class="card-title">자유를 위해 뛰어 내리다</h2>
+					  <p class="card-text">그녀는 "너무 높아 무서웠다고" 말했다 하지만 그것이 유일한 탈출구였다.</p>
+					</div>
+					<a class="btn-circle primary-theme"><i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+				<div class="card">
+					<img class="card-img" src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=aaa1085d-e64f-4fe6-a9e5-cb7da8bb4885&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822" alt="">
+					<div class="card-body">
+					  <h2 class="card-title">자유를 위해 뛰어 내리다</h2>
+					  <p class="card-text">그녀는 "너무 높아 무서웠다고" 말했다 하지만 그것이 유일한 탈출구였다.</p>
+					</div>
+					<a class="btn-circle primary-theme"><i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+				<div class="card">
+					<img class="card-img" src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=b0aab0c2-b249-45ea-9168-ad6971cca703&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822" alt="">
+					<div class="card-body">
+					  <h2 class="card-title">자유를 위해 뛰어 내리다</h2>
+					  <p class="card-text">그녀는 "너무 높아 무서웠다고" 말했다 하지만 그것이 유일한 탈출구였다.</p>
+					</div>
+					<a class="btn-circle primary-theme"><i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+				<div class="card">
+					<img class="card-img" src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=5f777a2d-f8ed-4f51-9248-32a284267cda&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822" alt="">
+					<div class="card-body">
+					  <h2 class="card-title">자유를 위해 뛰어 내리다</h2>
+					  <p class="card-text">그녀는 "너무 높아 무서웠다고" 말했다 하지만 그것이 유일한 탈출구였다.</p>
+					</div>
+					<a class="btn-circle primary-theme"><i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+				<div class="card">
+					<img class="card-img" src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=3551cb8d-d6f9-4848-a080-9d92df6365fd&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822" alt="">
+					<div class="card-body">
+					  <h2 class="card-title">자유를 위해 뛰어 내리다</h2>
+					  <p class="card-text">그녀는 "너무 높아 무서웠다고" 말했다 하지만 그것이 유일한 탈출구였다.</p>
+					</div>
+					<a class="btn-circle primary-theme"><i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+				<div class="card">
+					<img class="card-img" src="https://via.placeholder.com/400x395.png" alt="">
+					<div class="card-body">
+					  <h2 class="card-title">자유를 위해 뛰어 내리다</h2>
+					  <p class="card-text">그녀는 "너무 높아 무서웠다고" 말했다 하지만 그것이 유일한 탈출구였다.</p>
+					</div>
+					<a class="btn-circle primary-theme"><i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End News Section -->
+<!--https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=e096a11c-1a13-43aa-8291-3a62252b1781&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822
+	https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=b0825cf8-7ae8-4543-8548-4452f6f90492&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822-->
+	<!-- Video Section -->
+	<section class="story-section">
+		<div class="outer-container story-wrapper">
+			<div class="story-content">
+				<img src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=a4109487-c493-432a-b64c-77c390fa2739&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822" alt="와글와글합창단 로고">
+				<p class="title">꿈꾸는 아이들...</p>
+				<p class="text"><span class="primary-color">작은 통일</span>의 첫걸음을 노래하는 아이들을 응원해주세요!</p>
+			</div>
+			<img class="story-img" src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=f02fd16a-b370-4df8-9766-0434d091d702&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822" alt="">
+		</div>
+	</section>
+	<section class="video-section">
+		<div class="outer-container video-wrapper">
+			<video id="main-video" poster="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:c5e2fdda-abb5-4d4a-94e4-c6de3d785fb1;revision=0?component_id=81781634-7a32-455f-a234-47300b0acfb3&api_key=CometServer1&access_token=1654126808_urn%3Aaaid%3Asc%3AUS%3Ac5e2fdda-abb5-4d4a-94e4-c6de3d785fb1%3Bpublic_c8c23b734e7f15690120f6070e6e5ddc68e87822" playsinline loop="loop" muted>
+			<source src="../video/main-video.mp4" type="video/mp4" autostart="false"/>
+			Your browser does not support the video tag.
+			</video>
+			<div class="video-content">
+				<div class="video-title">VIDEO</div>
+				<h2>자유를 위해 뛰어내리다</h2>
+				<div class="text">그녀는 너무 높아 무서웠다 라고 말했다<br>하지만 그것이 유일한 탈출구였다</div>
+				<!-- Use a button to pause/play the video with JavaScript -->
+				<button id="main-video-btn" onclick="videoToggle();"><i class="fa-solid fa-play"></i></button>
+			</div>
+		</div>
+	</section>
+	<!--// Video Section-->
+	<!-- Featured Section -->
+	<section class="featured-section">
+		<div class="auto-container">
+			<div class="feature">
+				<div class="feature-img">
+					<img src="https://via.placeholder.com/620x390.png" alt="">
+				</div>
+				<div class="feature-content">
+				<h2>Escaping North korea</h2>
+				<p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+				<a href="#" class="btn-rounded primary-theme invert">
+					MORE&nbsp;<i class="fa-solid fa-arrow-right"></i>
+				</a>
+				</div>
+			</div>
+			<div class="feature">
+				<div class="feature-content">
+				<h2>Escaping North korea</h2>
+				<p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+				<a href="#" class="btn-rounded primary-theme invert">
+					MORE&nbsp;<i class="fa-solid fa-arrow-right"></i>
+				</a>
+				</div>
+				<div class="feature-img">
+					<img src="https://via.placeholder.com/620x390.png" alt="">
+				</div>
+			</div>	
+		</div>
+	</section>
+	<!--// Featured Section-->
+
+	<!-- sns Section -->
+	<section class="sns-section">
+		<div class="outer-container">
+			<div class="sec-title centered">
+				<h2>SNS</h2>
+				<!--<div class="text">Our Latest News</div>-->
+			</div>
+			<div class="sns-carousel owl-carousel owl-theme">
+				<a href="#" class="card">
+					<img class="card-img" src="https://via.placeholder.com/400x550.png" alt="">
+					<div class="card-body primary-theme invert">
+					  <h2 class="card-title">자유를 위해 뛰어 내리다</h2>
+					  <p class="card-text">그녀는 "너무 높아 무서웠다고" 말했다 하지만 그것이 유일한 탈출구였다.</p>
+					</div>
+				</a>
+				<a href="#" class="card">
+					<img class="card-img" src="https://via.placeholder.com/400x550.png" alt="">
+					<div class="card-body primary-theme invert">
+					  <h2 class="card-title">자유를 위해 뛰어 내리다</h2>
+					  <p class="card-text">그녀는 "너무 높아 무서웠다고" 말했다 하지만 그것이 유일한 탈출구였다.</p>
+					</div>
+				</a>
+				<a href="#" class="card">
+					<img class="card-img" src="https://via.placeholder.com/400x550.png" alt="">
+					<div class="card-body primary-theme invert">
+					  <h2 class="card-title">자유를 위해 뛰어 내리다</h2>
+					  <p class="card-text">그녀는 "너무 높아 무서웠다고" 말했다 하지만 그것이 유일한 탈출구였다.</p>
+					</div>
+				</a>
+				<a href="#" class="card">
+					<img class="card-img" src="https://via.placeholder.com/400x550.png" alt="">
+					<div class="card-body primary-theme invert">
+					  <h2 class="card-title">자유를 위해 뛰어 내리다</h2>
+					  <p class="card-text">그녀는 "너무 높아 무서웠다고" 말했다 하지만 그것이 유일한 탈출구였다.</p>
+					</div>
+				</a>
+				<a href="#" class="card">
+					<img class="card-img" src="https://via.placeholder.com/400x550.png" alt="">
+					<div class="card-body primary-theme invert">
+					  <h2 class="card-title">자유를 위해 뛰어 내리다</h2>
+					  <p class="card-text">그녀는 "너무 높아 무서웠다고" 말했다 하지만 그것이 유일한 탈출구였다.</p>
+					</div>
+				</a>
+				<a href="#" class="card">
+					<img class="card-img" src="https://via.placeholder.com/400x550.png" alt="">
+					<div class="card-body primary-theme invert">
+					  <h2 class="card-title">자유를 위해 뛰어 내리다</h2>
+					  <p class="card-text">그녀는 "너무 높아 무서웠다고" 말했다 하지만 그것이 유일한 탈출구였다.</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- // sns Section -->
+	
+	<!-- Call To Action Section -->
+	<section class="call-to-action-section">
+		<div class="auto-container">
+			<!--<div class="title"></div>-->
+			<h2>우리의 소원은 통일</h2>
+			<!--<div class="text"></div>-->
+			<a href="donate.html" class="btn-rounded primary-theme">후원하기&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+		</div>
+	</section>
+	<!-- Call To Action Section -->
+	
+	<!--Clients Section
+	Not Use
+    <section class="clients-section">
+        <div class="outer-container">
+            <div class="sponsors-outer">
+                <ul class="sponsors-carousel owl-carousel owl-theme">
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="../images/clients/1.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="../images/clients/2.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="../images/clients/3.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="../images/clients/4.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="../images/clients/5.png" alt=""></a></figure></li>                </ul>
+            </div>
+        </div>
+    </section>
+    -->
+
+	<!-- Main Footer-->
+    <footer class="footer-main">
+		<div class="outer-container centered">
+			<p>Copyright &copy;1999-2017 사단법인 두리하나 대표: 천기원</p>
+			<p>주 소 : 우편번호[ 08726 ]  서울특별시 관악구 은천로 39길 52 | 사업자등록번호 : 220-82-05847</p>
+			<p>대표전화 :  02-532-2513   팩 스 :  02-532-2517,  이메일 :   durihana@korea.com</p>
+		</div>
+	</footer>
+	<!-- //Main Footer-->
+
+</div>
+<!--End pagewrapper-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+
+<script src="../js/popper.min.js"></script>
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/ui.js"></script>
+<script>	
+	var mainVideo = document.getElementById("main-video");
+	var mainVideoBtn = document.getElementById("main-video-btn");
+	function videoToggle() {
+	  if (mainVideo.paused) {
+		mainVideo.play();
+		mainVideoBtn.innerHTML = '<i class="fa-solid fa-stop"></i>';
+	  } else {
+		mainVideo.pause();
+		mainVideoBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+	  }
+	}
+</script>
+</body>
+</html>
